@@ -10,10 +10,9 @@ public class DocsBot {
 
     public static void main(String[] args) {
         try{
-            JDA jda = JDABuilder.createDefault("ODY4OTM4ODg5NTY4NTg3Nzc3.YP28Zw.aj4SL-vPvocEtUv0LTX-UCTChrM").build();
+            JDA jda = JDABuilder.createDefault("i almost forgot to remove my token before committing this lol").build();
             jda.getPresence().setStatus(OnlineStatus.ONLINE);
             jda.getPresence().setActivity(Activity.playing("db!help"));
-
             jda.addEventListener(new Commands());
         } catch (javax.security.auth.login.LoginException ex) {
             ex.printStackTrace();
